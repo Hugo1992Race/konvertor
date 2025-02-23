@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расширенный конвертер температуры</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Конвертер температуры.</h1> 
+    </header>
+
+    <main>
+        <div>
+            <button id="convertbutton">Конвертировать</button>
+            <input type="number" id="temp-input" placeholder="Введите температуру">
+            <form>   
+                <select name="temp" id="temp-select-from">
+                    <option value="">-- Единицы измерения --</option>
+                    <option value="fahrenheit">фаренгейт</option>
+                    <option value="Celsius">цельсий</option>
+                    <option value="kelvin">кельвин</option>
+                </select>
+            </form>
+
+            <form>
+                <select name="temp" id="temp-select-to">
+                    <option value="">-- Единицы измерения --</option>
+                    <option value="fahrenheit">фаренгейт</option>
+                    <option value="Celsius">цельсий</option>
+                    <option value="kelvin">кельвин</option>
+                </select>
+            </form>
+        </div>
+        <p id="result">Результат конвертации.</p>
+        <section id="history">
+            <h3>История конвертации.</h3>
+            <ol id="history-list"></ol>
+            <button type="button" id="clear">удалить историю</button>
+        </section>
+    </main>
+</body>
+
+<footer>Чтобы увеличить конвертер зажмите клавишу ctrl+ прокрутите колесо мышки.</footer>
+
+<script src="./indexx.js"></script>
+</html>
